@@ -2,6 +2,7 @@ package com.guagua.googletrendsvisualize.googletrends
 
 import com.guagua.googletrendsvisualize.model.GoogleTrendsDataSource
 import com.guagua.googletrendsvisualize.model.GoogleTrendsRepository
+import java.util.*
 
 class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
 
@@ -45,9 +46,7 @@ class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
     }
 
     private fun removeUnknownRegions(){
-
         val regionsIt = regions.iterator()
-
         while (regionsIt.hasNext()){
             var isUnknownRegion = true
             val regionKey = regionsIt.next().key
@@ -62,7 +61,6 @@ class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
             }
             if (isUnknownRegion) regionsIt.remove()
         }
-
     }
 
     override fun getTrendsInRegion(index: Int) {
@@ -77,7 +75,7 @@ class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
     }
 
     override fun getRegionsMenu(): Array<String> {
-        return regions.values.toTypedArray()
+        return regions.values.toTypedArray().sortedArray()
     }
 
     override fun setView(view: GoogleTrendsContract.View) {
