@@ -1,5 +1,7 @@
 package com.guagua.googletrendsvisualize.model
 
+import javax.inject.Inject
+
 class GoogleTrendsRepository: GoogleTrendsDataSource{
 
     var googleTrendsRemoteDataSource: GoogleTrendsDataSource
@@ -7,6 +9,7 @@ class GoogleTrendsRepository: GoogleTrendsDataSource{
     var trends: HashMap<String, Array<String>> = hashMapOf()
     var regions: HashMap<String, String> = hashMapOf()
 
+    @Inject
     constructor(googleTrendsRemoteDataSource: GoogleTrendsDataSource){
         this.googleTrendsRemoteDataSource = googleTrendsRemoteDataSource
     }
@@ -44,7 +47,5 @@ class GoogleTrendsRepository: GoogleTrendsDataSource{
             }
         })
     }
-
-    fun getTrendsOfSingleRegion(key: String) = trends[key]
 
 }

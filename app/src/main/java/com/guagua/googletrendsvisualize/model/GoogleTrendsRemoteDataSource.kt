@@ -1,9 +1,12 @@
 package com.guagua.googletrendsvisualize.model
 
+import javax.inject.Inject
+
 class GoogleTrendsRemoteDataSource: GoogleTrendsDataSource{
 
     var googleTrendsApiService: GoogleTrendsApiService
 
+    @Inject
     constructor(googleTrendsApiService: GoogleTrendsApiService){
         this.googleTrendsApiService = googleTrendsApiService
     }

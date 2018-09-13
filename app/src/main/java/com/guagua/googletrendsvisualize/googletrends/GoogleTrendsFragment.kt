@@ -6,15 +6,20 @@ import android.util.Log
 import android.view.*
 import android.widget.GridLayout
 import android.widget.PopupMenu
-import com.guagua.googletrendsvisualize.Injection
 import com.guagua.googletrendsvisualize.R
+import com.guagua.googletrendsvisualize.di.DaggerApplicationComponent
+import com.guagua.googletrendsvisualize.model.GoogleTrendsRepository
 import kotlinx.android.synthetic.main.fragment_google_trends.*
+import javax.inject.Inject
 
 
 class GoogleTrendsFragment: Fragment(), GoogleTrendsContract.View, PopupMenu.OnMenuItemClickListener{
 
     private val LOG_TAG = "GoogleTrendsFragment"
     private lateinit var presenter: GoogleTrendsContract.Presenter
+
+    @Inject
+    lateinit var googleTrendsRepository: GoogleTrendsRepository
 
     companion object {
         private var INSTANCE: GoogleTrendsFragment? = null
@@ -26,6 +31,7 @@ class GoogleTrendsFragment: Fragment(), GoogleTrendsContract.View, PopupMenu.OnM
     }
 
     init {
+        DaggerApplicationComponent.builder().build().inject(this)
         initPresenter()
     }
 
@@ -46,7 +52,7 @@ class GoogleTrendsFragment: Fragment(), GoogleTrendsContract.View, PopupMenu.OnM
     }
 
     fun initPresenter(){
-        this.presenter = GoogleTrendsPresenter.getInstance(Injection.provideGoogleTrendsRepository())
+        this.presenter = GoogleTrendsPresenter.getInstance(googleTrendsRepository)
         this.presenter.setView(this)
     }
 

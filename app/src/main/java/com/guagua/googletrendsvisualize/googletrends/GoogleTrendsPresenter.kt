@@ -2,6 +2,7 @@ package com.guagua.googletrendsvisualize.googletrends
 
 import com.guagua.googletrendsvisualize.model.GoogleTrendsDataSource
 import com.guagua.googletrendsvisualize.model.GoogleTrendsRepository
+import javax.inject.Inject
 
 class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
 
@@ -14,6 +15,7 @@ class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
     private var COLUMN = 3
     private var REGION_INDEX = 0
 
+    @Inject
     constructor(googleTrendsRepository: GoogleTrendsRepository){
         this.googleTrendsRepository = googleTrendsRepository
     }
