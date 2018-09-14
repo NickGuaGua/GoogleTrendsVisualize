@@ -1,7 +1,9 @@
 package com.guagua.googletrendsvisualize.model
 
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class GoogleTrendsRepository: GoogleTrendsDataSource{
 
     var googleTrendsRemoteDataSource: GoogleTrendsDataSource

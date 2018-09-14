@@ -1,8 +1,10 @@
 package com.guagua.googletrendsvisualize.googletrends
 
+import com.guagua.googletrendsvisualize.di.ActivityScoped
 import com.guagua.googletrendsvisualize.model.GoogleTrendsDataSource
 import com.guagua.googletrendsvisualize.model.GoogleTrendsRepository
 import javax.inject.Inject
+
 
 class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
 
@@ -20,15 +22,6 @@ class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
         this.googleTrendsRepository = googleTrendsRepository
     }
 
-    companion object {
-        var INSTANCE: GoogleTrendsPresenter? = null
-        fun getInstance(googleTrendsRepository: GoogleTrendsRepository): GoogleTrendsPresenter{
-            if (INSTANCE == null) INSTANCE = GoogleTrendsPresenter(googleTrendsRepository)
-            return INSTANCE as GoogleTrendsPresenter
-        }
-
-    }
-
     override fun loadTrendsAndRegions() {
         googleTrendsRepository.getAllTrends(object : GoogleTrendsDataSource.GetAllTrendsCallback{
             override fun onDataReturn(data: HashMap<String, Array<String>>) {
@@ -36,6 +29,7 @@ class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
                 googleTrendsRepository.getAllRegions(object : GoogleTrendsDataSource.GetAllRegionCallback{
                     override fun onDataReturn(data: HashMap<String, String>) {
                         regions = data
+                        regions.toSortedMap(compareByDescending { it })
                         removeUnknownRegions()
                         view.onLoadDataCompleted()
                     }

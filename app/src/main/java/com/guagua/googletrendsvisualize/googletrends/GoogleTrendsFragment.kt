@@ -1,43 +1,32 @@
 package com.guagua.googletrendsvisualize.googletrends
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.util.Log
 import android.view.*
 import android.widget.GridLayout
 import android.widget.PopupMenu
 import com.guagua.googletrendsvisualize.R
-import com.guagua.googletrendsvisualize.di.DaggerApplicationComponent
-import com.guagua.googletrendsvisualize.model.GoogleTrendsRepository
+import com.guagua.googletrendsvisualize.di.ActivityScoped
+import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_google_trends.*
 import javax.inject.Inject
 
 
-class GoogleTrendsFragment: Fragment(), GoogleTrendsContract.View, PopupMenu.OnMenuItemClickListener{
+class GoogleTrendsFragment @Inject constructor() : DaggerFragment(), GoogleTrendsContract.View, PopupMenu.OnMenuItemClickListener {
 
     private val LOG_TAG = "GoogleTrendsFragment"
-    private lateinit var presenter: GoogleTrendsContract.Presenter
 
     @Inject
-    lateinit var googleTrendsRepository: GoogleTrendsRepository
-
-    companion object {
-        private var INSTANCE: GoogleTrendsFragment? = null
-
-        fun getInstance():GoogleTrendsFragment{
-            if (INSTANCE == null) INSTANCE = GoogleTrendsFragment()
-            return INSTANCE as GoogleTrendsFragment
-        }
-    }
+    lateinit var presenter: GoogleTrendsContract.Presenter
 
     init {
-        DaggerApplicationComponent.builder().build().inject(this)
-        initPresenter()
+//        initPresenter()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
+        initPresenter()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -52,7 +41,6 @@ class GoogleTrendsFragment: Fragment(), GoogleTrendsContract.View, PopupMenu.OnM
     }
 
     fun initPresenter(){
-        this.presenter = GoogleTrendsPresenter.getInstance(googleTrendsRepository)
         this.presenter.setView(this)
     }
 
@@ -109,4 +97,5 @@ class GoogleTrendsFragment: Fragment(), GoogleTrendsContract.View, PopupMenu.OnM
         loadingBar.visibility = View.GONE
         presenter.getTrendsInRegion(41)
     }
+
 }

@@ -8,7 +8,7 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-class ApplicationModule {
+class GoogleTrendsRepositoryModule {
 
     @Provides
     fun provideGoogleTrendsRepository(googleTrendsDataSource: GoogleTrendsDataSource): GoogleTrendsRepository = GoogleTrendsRepository.getInstance(googleTrendsDataSource)
