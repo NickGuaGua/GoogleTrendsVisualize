@@ -103,7 +103,7 @@ class GoogleTrendsView(context: Context, val trends: Array<String>) : Constraint
 
     fun getRandomColor(): Int{
         val colors = resources.getIntArray(R.array.google_trends_color_set)
-        var i = 0
+        var i: Int
 
         do {
             i = (Math.random()*colors.size).toInt()

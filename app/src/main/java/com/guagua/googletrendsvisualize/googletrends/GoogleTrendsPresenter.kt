@@ -69,7 +69,7 @@ class GoogleTrendsPresenter: GoogleTrendsContract.Presenter{
     }
 
     fun showTrends(){
-        val region = regions.keys.toTypedArray()[REGION_INDEX]
+        val region = regions.keys.toTypedArray().sortedArray()[REGION_INDEX]
         if (trends[region]!=null)
             view.showTrends(trends[region]!!)
     }
