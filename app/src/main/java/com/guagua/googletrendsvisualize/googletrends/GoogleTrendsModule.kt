@@ -9,9 +9,11 @@ import dagger.android.ContributesAndroidInjector
 @Module
 abstract class GoogleTrendsModule {
 
+    @FragmentScoped
     @ContributesAndroidInjector
     abstract fun googleTrendsFragment(): GoogleTrendsFragment
 
+    @ActivityScoped
     @Binds
     abstract fun googleTrendsPresenter(presenter: GoogleTrendsPresenter): GoogleTrendsContract.Presenter
 

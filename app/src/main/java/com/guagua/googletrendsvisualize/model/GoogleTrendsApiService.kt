@@ -2,27 +2,23 @@ package com.guagua.googletrendsvisualize.model
 
 import retrofit2.Call
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Inject
+
 
 class GoogleTrendsApiService: GoogleTrendsDataSource {
 
-    var retrofit: Retrofit = Retrofit.Builder()
-            .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://trends.google.com")
-            .build()
+    private var googleTrendsApi: GoogleTrendsApi
 
-    var googleTrendsApi: GoogleTrendsApi
-
-    constructor(){
-        this.googleTrendsApi = retrofit.create(GoogleTrendsApi::class.java)
+    @Inject
+    constructor(googleTrendsApi: GoogleTrendsApi){
+        this.googleTrendsApi = googleTrendsApi
     }
 
     companion object {
         var INSTANCE: GoogleTrendsApiService? = null
 
-        fun getInstance():GoogleTrendsApiService{
-            if (INSTANCE == null) INSTANCE = GoogleTrendsApiService()
+        fun getInstance(googleTrendsApi: GoogleTrendsApi):GoogleTrendsApiService{
+            if (INSTANCE == null) INSTANCE = GoogleTrendsApiService(googleTrendsApi)
             return INSTANCE as GoogleTrendsApiService
         }
     }
@@ -56,4 +52,5 @@ class GoogleTrendsApiService: GoogleTrendsDataSource {
             }
         })
     }
+
 }

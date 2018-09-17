@@ -6,16 +6,12 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="HTTP" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85139f74-5511-4f58-8500-4d9e274c0b23" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/GoogleTrendsApplication.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ActivityBindingModule.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ActivityScoped.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/AppComponent.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/FragmentScoped.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsModule.kt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/LogInterceptor.kt" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
@@ -26,16 +22,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ApplicationComponent.kt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ApplicationModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/GoogleTrendsRepositoryModule.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsActivity.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsFragment.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsFragment.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsPresenter.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsPresenter.kt" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/Injection.kt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/AppComponent.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/AppComponent.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/GoogleTrendsRepositoryModule.kt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsModule.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApiService.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApiService.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRemoteDataSource.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRemoteDataSource.kt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRepository.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRepository.kt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+              <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
               <folding>
                 <element signature="e#55#313#0" expanded="true" />
               </folding>
@@ -74,8 +67,8 @@
       <file leaf-file-name="ActivityBindingModule.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ActivityBindingModule.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="150">
+              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
                 <element signature="e#45#260#0" expanded="true" />
               </folding>
@@ -83,43 +76,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleTrendsModule.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GoogleTrendsModule.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsModule.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="104" lean-forward="true" selection-start-line="15" selection-start-column="104" selection-end-line="15" selection-end-column="104" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleTrendsRepositoryModule.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/GoogleTrendsRepositoryModule.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleTrendsFragment.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
-                <element signature="e#55#425#0" expanded="true" />
+                <element signature="e#55#260#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleTrendsApiService.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApiService.kt">
+      <file leaf-file-name="GoogleTrendsFragment.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="30" column="86" lean-forward="false" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
+            <state relative-caret-position="104">
+              <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="8" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -128,39 +101,34 @@
       <file leaf-file-name="GoogleTrendsApi.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApi.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="60" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="11" selection-end-column="60" />
+            <state relative-caret-position="180">
+              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleTrendsPresenter.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsPresenter.kt">
+      <file leaf-file-name="GoogleTrendsRepository.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRepository.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="141">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="GoogleTrendsApiService.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApiService.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityScoped.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ActivityScoped.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#48#122#0" expanded="true" />
+                <element signature="e#369#661#0" expanded="false" />
+                <element signature="e#748#1360#0" expanded="false" />
+                <element signature="e#1448#2033#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2420,7 +2388,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ApplicationModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ApplicationComponent.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ApplComponent.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/GoogleTrendsRepositoryModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ActivityScope.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ActivityScoped.kt" />
@@ -2429,12 +2396,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/GoogleTrendsApplication.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/AppComponent.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRepository.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRemoteDataSource.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApiService.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/GoogleTrendsRepositoryModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/LogInterceptor.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRepository.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsModule.kt" />
       </list>
     </option>
   </component>
@@ -2531,6 +2500,7 @@
       <recent name="com.guagua.googletrendsvisualize.GoogleTrends" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.guagua.googletrendsvisualize.model" />
       <recent name="com.guagua.googletrendsvisualize.GoogleTrends" />
       <recent name="com.guagua.googletrendsvisualize.Model" />
     </key>
@@ -2721,12 +2691,12 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.4978701" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.4978701" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2799,24 +2769,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="58" lean-forward="false" selection-start-line="77" selection-start-column="58" selection-end-line="77" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#55#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/fragment_google_trends_menu.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_menu_manage.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -2943,14 +2895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/Injection.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="110" lean-forward="false" selection-start-line="7" selection-start-column="110" selection-end-line="7" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsContract.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -3024,7 +2968,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
-            <element signature="e#42#277#0" expanded="true" />
+            <element signature="e#42#277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3053,28 +2997,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/FragmentScoped.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/guagua/googletrendsvisualize/di/AppComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/AppComponent.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
-            <element signature="e#45#388#0" expanded="false" />
+            <element signature="e#45#463#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3092,26 +3020,6 @@
         <state relative-caret-position="60">
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="e#48#104#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRemoteDataSource.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#48#104#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3134,18 +3042,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsPresenter.kt">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="e#55#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/Injection.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="165" lean-forward="false" selection-start-line="7" selection-start-column="165" selection-end-line="7" selection-end-column="165" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRemoteDataSource.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/guagua/googletrendsvisualize/di/GoogleTrendsRepositoryModule_ProvideGoogleTrendsApiFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/LogInterceptor.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#48#122#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApiService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#122#0" expanded="true" />
+            <element signature="e#369#661#0" expanded="false" />
+            <element signature="e#748#1360#0" expanded="false" />
+            <element signature="e#1448#2033#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsRepositoryModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#198#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ActivityBindingModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#45#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/guagua/googletrendsvisualize/di/AppComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        <state relative-caret-position="75">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="8" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/FragmentScoped.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -3158,64 +3183,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="e#55#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/ActivityBindingModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-          <folding>
-            <element signature="e#45#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsModule.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="104" lean-forward="true" selection-start-line="15" selection-start-column="104" selection-end-line="15" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="60" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="11" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/model/GoogleTrendsApiService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="30" column="86" lean-forward="false" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/di/GoogleTrendsRepositoryModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/guagua/googletrendsvisualize/googletrends/GoogleTrendsFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
-            <element signature="e#55#425#0" expanded="true" />
+            <element signature="e#55#260#0" expanded="true" />
           </folding>
         </state>
       </provider>

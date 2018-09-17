@@ -6,7 +6,7 @@ import javax.inject.Singleton
 @Singleton
 class GoogleTrendsRepository: GoogleTrendsDataSource{
 
-    var googleTrendsRemoteDataSource: GoogleTrendsDataSource
+    private var googleTrendsRemoteDataSource: GoogleTrendsDataSource
 
     var trends: HashMap<String, Array<String>> = hashMapOf()
     var regions: HashMap<String, String> = hashMapOf()

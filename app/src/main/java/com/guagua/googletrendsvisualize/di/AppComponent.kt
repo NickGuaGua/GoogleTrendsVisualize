@@ -3,6 +3,7 @@ package com.guagua.googletrendsvisualize.di
 import android.app.Application
 import com.guagua.googletrendsvisualize.GoogleTrendsApplication
 import com.guagua.googletrendsvisualize.model.GoogleTrendsRepository
+import com.guagua.googletrendsvisualize.model.GoogleTrendsRepositoryModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
