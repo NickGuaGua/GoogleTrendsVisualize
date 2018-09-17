@@ -6,7 +6,6 @@ import android.view.*
 import android.widget.GridLayout
 import android.widget.PopupMenu
 import com.guagua.googletrendsvisualize.R
-import com.guagua.googletrendsvisualize.di.ActivityScoped
 import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_google_trends.*
 import javax.inject.Inject
@@ -19,14 +18,10 @@ class GoogleTrendsFragment @Inject constructor() : DaggerFragment(), GoogleTrend
     @Inject
     lateinit var presenter: GoogleTrendsContract.Presenter
 
-    init {
-//        initPresenter()
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-        initPresenter()
+        presenter.setView(this)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -38,10 +33,6 @@ class GoogleTrendsFragment @Inject constructor() : DaggerFragment(), GoogleTrend
 
         presenter.loadTrendsAndRegions()
 
-    }
-
-    fun initPresenter(){
-        this.presenter.setView(this)
     }
 
     override fun showTrends(trends: Array<String>) {
