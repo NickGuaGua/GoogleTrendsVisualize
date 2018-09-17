@@ -18,12 +18,12 @@ import java.io.FileReader
 class GoogleTrendsPresenterTest{
 
     @Mock
-    lateinit var googleTrendsRepository: GoogleTrendsRepository
+    private lateinit var googleTrendsRepository: GoogleTrendsRepository
 
     @Mock
-    lateinit var googleTrendsFragment: GoogleTrendsContract.View
+    private lateinit var googleTrendsFragment: GoogleTrendsContract.View
 
-    lateinit var googleTrendsPresenter: GoogleTrendsPresenter
+    private lateinit var googleTrendsPresenter: GoogleTrendsPresenter
 
     lateinit var TRENDS: HashMap<String, Array<String>>
     lateinit var REGIONS: HashMap<String, String>
