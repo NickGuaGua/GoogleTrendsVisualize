@@ -25,3 +25,8 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext{
+    mockitoVersion = '2.22.0'
+    dexmakerVersion = '1.2'
+}

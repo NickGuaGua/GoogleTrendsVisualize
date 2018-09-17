@@ -24,6 +24,7 @@ class GoogleTrendsApiService: GoogleTrendsDataSource {
     }
 
     override fun getAllTrends(callback: GoogleTrendsDataSource.GetAllTrendsCallback) {
+
         googleTrendsApi.getAllTrends().enqueue(object : retrofit2.Callback<HashMap<String, Array<String>>>{
             override fun onFailure(call: Call<HashMap<String, Array<String>>>?, t: Throwable?) {
                 callback.onDataNotAvailable()
@@ -39,6 +40,7 @@ class GoogleTrendsApiService: GoogleTrendsDataSource {
     }
 
     override fun getAllRegions(callback: GoogleTrendsDataSource.GetAllRegionCallback) {
+
         googleTrendsApi.getAllRegions().enqueue(object : retrofit2.Callback<HashMap<String, String>>{
             override fun onFailure(call: Call<HashMap<String, String>>?, t: Throwable?) {
                 callback.onDataNotAvailable()

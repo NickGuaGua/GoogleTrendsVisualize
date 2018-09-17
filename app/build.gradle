@@ -41,6 +41,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    // Dependencies for Android unit tests
+    androidTestImplementation "org.mockito:mockito-core:$rootProject.ext.mockitoVersion"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0-RC2"
+    androidTestImplementation "com.google.dexmaker:dexmaker:$rootProject.ext.dexmakerVersion"
+    androidTestImplementation "com.google.dexmaker:dexmaker-mockito:$rootProject.ext.dexmakerVersion"
 
     kapt 'com.google.dagger:dagger-compiler:2.16'
     implementation "com.google.dagger:dagger:2.16"

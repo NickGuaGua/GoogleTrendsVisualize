@@ -4,7 +4,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class GoogleTrendsRepository: GoogleTrendsDataSource{
+open class GoogleTrendsRepository: GoogleTrendsDataSource{
 
     private var googleTrendsRemoteDataSource: GoogleTrendsDataSource
 
