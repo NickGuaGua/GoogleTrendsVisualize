@@ -4,6 +4,7 @@ import com.guagua.googletrendsvisualize.googletrends.GoogleTrendsActivity
 import com.guagua.googletrendsvisualize.googletrends.GoogleTrendsModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
+import javax.inject.Singleton
 
 @Module
 abstract class ActivityBindingModule{

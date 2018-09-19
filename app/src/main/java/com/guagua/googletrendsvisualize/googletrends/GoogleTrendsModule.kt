@@ -5,6 +5,7 @@ import com.guagua.googletrendsvisualize.di.FragmentScoped
 import dagger.Binds
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
+import javax.inject.Singleton
 
 @Module
 abstract class GoogleTrendsModule {

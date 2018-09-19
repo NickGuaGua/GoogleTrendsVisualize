@@ -14,8 +14,6 @@ import javax.inject.Singleton
 @Component(modules = [(GoogleTrendsRepositoryModule::class), (ActivityBindingModule::class), (AndroidSupportInjectionModule::class)])
 interface AppComponent : AndroidInjector<GoogleTrendsApplication> {
 
-    fun getGoogleTrendsRepository(): GoogleTrendsRepository
-
     @Component.Builder
     interface Builder {
         fun build(): AppComponent
