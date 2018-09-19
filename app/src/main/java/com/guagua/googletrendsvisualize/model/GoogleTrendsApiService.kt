@@ -3,6 +3,7 @@ package com.guagua.googletrendsvisualize.model
 import retrofit2.Call
 import retrofit2.Response
 import javax.inject.Inject
+import javax.inject.Named
 
 
 class GoogleTrendsApiService: GoogleTrendsDataSource {

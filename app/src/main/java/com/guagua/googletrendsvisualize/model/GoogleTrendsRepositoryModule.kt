@@ -1,10 +1,10 @@
 package com.guagua.googletrendsvisualize.model
 
+import com.guagua.googletrendsvisualize.API
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Named
 
 @Module
 class GoogleTrendsRepositoryModule {
@@ -16,14 +16,11 @@ class GoogleTrendsRepositoryModule {
     fun provideGoogleTrendsDataSource(googleTrendsApiService: GoogleTrendsApiService): GoogleTrendsDataSource = GoogleTrendsRemoteDataSource.getInstance(googleTrendsApiService)
 
     @Provides
-    fun provideGoogleTrendsApiService(googleTrendsApi: GoogleTrendsApi): GoogleTrendsApiService = GoogleTrendsApiService.getInstance(googleTrendsApi)
+    fun provideGoogleTrendsApiService(@Named("GoogleTrendsApi") googleTrendsApi: GoogleTrendsApi): GoogleTrendsApiService = GoogleTrendsApiService.getInstance(googleTrendsApi)
 
+    @Named("GoogleTrendsApi")
     @Provides
-    fun provideGoogleTrendsApi(okHttpClient: OkHttpClient): GoogleTrendsApi = Retrofit.Builder()
-            .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://trends.google.com")
-            .client(okHttpClient)
-            .build().create(GoogleTrendsApi::class.java)
+    fun provideGoogleTrendsApi(okHttpClient: OkHttpClient) = API(GoogleTrendsApi::class.java, "https://trends.google.com", okHttpClient).provideAPI()
 
     @Provides
     fun provideOkHttpClient(): OkHttpClient = OkHttpClient().newBuilder().addNetworkInterceptor(LogInterceptor()).build()
